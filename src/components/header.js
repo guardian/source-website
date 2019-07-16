@@ -2,7 +2,14 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import { css } from "@emotion/core"
+import { palette } from "@guardian/pasteup/palette"
 
+import { Container } from "./container"
+
+const headerStyle = css`
+  background: ${palette.brand.main};
+  margin-bottom: 1.45rem;
+`
 const navListStyle = css`
   display: flex;
   li {
@@ -15,19 +22,8 @@ const navLinkStyle = css`
   text-decoration: none;
 `
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
+  <header css={headerStyle}>
+    <Container>
       <h1 style={{ margin: 0 }}>
         <Link
           to="/"
@@ -63,7 +59,7 @@ const Header = ({ siteTitle }) => (
           </li>
         </ul>
       </nav>
-    </div>
+    </Container>
   </header>
 )
 

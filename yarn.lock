@@ -879,6 +879,11 @@
     signedsource "^1.0.0"
     yargs "^9.0.0"
 
+"@guardian/pasteup@^2.0.0-alpha.2":
+  version "2.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/@guardian/pasteup/-/pasteup-2.0.0-alpha.2.tgz#ee73012b19fdc260a4407dcbb7399b82307c3c5e"
+  integrity sha512-V+PlyX9j6jSVs7jDD71wD/iIDC3K2yPletffFDcYHHmiIMuJaE3oqJC+tb8sWjZGtAkfXY8aYdC/GaYpCs6Xgg==
+
 "@hapi/address@2.x.x":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@hapi/address/-/address-2.0.0.tgz#9f05469c88cb2fd3dcd624776b54ee95c312126a"
