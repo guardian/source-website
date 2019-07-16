@@ -1,7 +1,19 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import { css } from "@emotion/core"
 
+const navListStyle = css`
+  display: flex;
+  li {
+    flex: 1 1 auto;
+    list-style-type: none;
+  }
+`
+const navLinkStyle = css`
+  color: white;
+  text-decoration: none;
+`
 const Header = ({ siteTitle }) => (
   <header
     style={{
@@ -27,6 +39,30 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
+      <nav>
+        <ul css={navListStyle}>
+          <li>
+            <Link to="/" css={navLinkStyle}>
+              Pattern library
+            </Link>
+          </li>
+          <li>
+            <Link to="/principles/" css={navLinkStyle}>
+              Principles
+            </Link>
+          </li>
+          <li>
+            <Link to="/contributing/" css={navLinkStyle}>
+              Contributing
+            </Link>
+          </li>
+          <li>
+            <Link to="/glossary/" css={navLinkStyle}>
+              Glossary
+            </Link>
+          </li>
+        </ul>
+      </nav>
     </div>
   </header>
 )

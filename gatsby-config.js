@@ -1,10 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Source`,
+    description: `The Guardian's Design System`,
+    author: `@siadcock`,
   },
   plugins: [
+    `gatsby-plugin-emotion`,
+    // Document <head> management
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -13,8 +15,10 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    // Image processing and compression
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    // PWA options
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
