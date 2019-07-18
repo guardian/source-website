@@ -9,6 +9,7 @@ module.exports = {
     `gatsby-plugin-emotion`,
     // Document <head> management
     `gatsby-plugin-react-helmet`,
+    // Image processing and compression
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -16,9 +17,17 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    // Image processing and compression
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    // Define content as markdown
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-patterns`,
+        path: `${__dirname}/src/patterns`,
+      },
+    },
+    `gatsby-transformer-remark`,
     // PWA options
     {
       resolve: `gatsby-plugin-manifest`,

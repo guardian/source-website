@@ -33,20 +33,10 @@ const IndexPage = () => (
       </p>
     </section>
     <section>
-      <h3>Patterns</h3>
+      <h3>
+        <a href="/patterns/dropdown">Patterns</a>
+      </h3>
       <p>Visual units that represent behaviour or enable a user action</p>
-      <ul>
-        <li>
-          <h3>Dropdown</h3>
-          <h4>Purpose</h4>
-          <p>
-            Dropdowns expand to reveal a menu of options. They close themselves
-            when the user clicks out of them.
-          </p>
-          <h4>Example</h4>
-          <h4>Variants</h4>
-        </li>
-      </ul>
     </section>
   </Layout>
 )
