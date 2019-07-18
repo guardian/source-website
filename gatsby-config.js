@@ -4,6 +4,7 @@ module.exports = {
     description: `The Guardian's Design System`,
     author: `@siadcock`,
   },
+  pathPrefix: "/source-website",
   plugins: [
     `gatsby-plugin-emotion`,
     // Document <head> management
