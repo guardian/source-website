@@ -1,5 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -8,11 +10,14 @@ export default function Template({
   const { frontmatter, html } = markdownRemark
   const { name, purpose } = frontmatter // finally, the data from the markdown file
   return (
-    <article>
-      <h1>{name}</h1>
-      <p>{purpose}</p>
-      <div dangerouslySetInnerHTML={{ __html: html }} />
-    </article>
+    <Layout>
+      <SEO title="Source: Pattern Library" />
+      <article>
+        <h1>{name}</h1>
+        <p>{purpose}</p>
+        <div dangerouslySetInnerHTML={{ __html: html }} />
+      </article>
+    </Layout>
   )
 }
 
