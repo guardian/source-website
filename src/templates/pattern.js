@@ -11,10 +11,7 @@ export default function Template({
     <article>
       <h1>{name}</h1>
       <p>{purpose}</p>
-      <div
-        className="blog-post-content"
-        dangerouslySetInnerHTML={{ __html: html }}
-      />
+      <div dangerouslySetInnerHTML={{ __html: html }} />
     </article>
   )
 }

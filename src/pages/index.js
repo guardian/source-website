@@ -34,7 +34,7 @@ const IndexPage = () => (
     </section>
     <section>
       <h3>
-        <a href="/patterns/dropdown">Patterns</a>
+        <a href="patterns/dropdown">Patterns</a>
       </h3>
       <p>Visual units that represent behaviour or enable a user action</p>
     </section>
