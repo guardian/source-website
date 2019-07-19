@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import { css } from "@emotion/core"
 import { palette } from "@guardian/pasteup/palette"
-
+import { headline } from "@guardian/pasteup/typography"
 import { Container } from "./container"
 
 const headerStyle = css`
@@ -18,13 +18,18 @@ const navListStyle = css`
   }
 `
 const navLinkStyle = css`
+  ${headline(3)};
   color: white;
   text-decoration: none;
+`
+const h1Style = css`
+  ${headline(9)};
+  margin: 0;
 `
 const Header = ({ siteTitle }) => (
   <header css={headerStyle}>
     <Container>
-      <h1 style={{ margin: 0 }}>
+      <h1 css={h1Style}>
         <Link
           to="/"
           style={{
