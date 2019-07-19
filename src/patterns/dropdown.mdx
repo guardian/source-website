@@ -1,0 +1,26 @@
+---
+path: "/patterns/dropdown"
+name: "Dropdown"
+purpose: "Dropdowns expand to reveal a menu of options. They close themselves when the user clicks out of them."
+---
+
+import Dropdown from "../components/dropdown"
+
+<Dropdown
+  label="My account"
+  links={[
+    {
+      url: "#",
+      title: "Google+",
+    },
+    {
+      url: "#",
+      title: "MySpace",
+    },
+    {
+      url: "#",
+      title: "LiveJournal",
+    },
+  ]}
+  id="my-account"
+/>

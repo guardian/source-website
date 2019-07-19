@@ -22,14 +22,14 @@ const navLinkStyle = css`
   color: white;
   text-decoration: none;
 `
-const h1Style = css`
+const headerTextStyle = css`
   ${headline(9)};
   margin: 0;
 `
 const Header = ({ siteTitle }) => (
   <header css={headerStyle}>
     <Container>
-      <h1 css={h1Style}>
+      <span css={headerTextStyle}>
         <Link
           to="/"
           style={{
@@ -39,7 +39,7 @@ const Header = ({ siteTitle }) => (
         >
           {siteTitle}
         </Link>
-      </h1>
+      </span>
       <nav>
         <ul css={navListStyle}>
           <li>

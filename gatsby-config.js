@@ -27,7 +27,8 @@ module.exports = {
         path: `${__dirname}/src/patterns`,
       },
     },
-    `gatsby-transformer-remark`,
+    `gatsby-plugin-mdx`,
+    //`gatsby-transformer-remark`,
     // PWA options
     {
       resolve: `gatsby-plugin-manifest`,
