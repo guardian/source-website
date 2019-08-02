@@ -17,38 +17,14 @@ const h2Style = css`
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Source: Pattern Library" />
+    <SEO title="The Guardian: Source" />
     <section>
-      <h1 css={h1Style}>Pattern library</h1>
-      <p>Values that are used within our patterns.</p>
-      <h2 css={h2Style}>Tokens</h2>
-      <p>
-        <a href="https://github.com/guardian/dotcom-rendering/tree/master/packages/pasteup">
-          Pasteup
-        </a>
-      </p>
-      <ul>
-        <li>Colour</li>
-        <li>Spacing</li>
-        <li>Typography</li>
-        <li>Z-index</li>
-        <li>Tabindex</li>
-        <li>Icons</li>
-        <li>Animation</li>
-      </ul>
-    </section>
-    <section>
-      <h2 css={h2Style}>Utilities</h2>
-      <p>
-        Utility mixins and functions that perform some calculation for use with
-        our styles
-      </p>
+      <h1 css={h1Style}>The Guardian: Source</h1>
     </section>
     <section>
       <h2 css={h2Style}>
-        <a href="patterns/dropdown">Patterns</a>
+        <a href="components/button">Components</a>
       </h2>
-      <p>Visual units that represent behaviour or enable a user action</p>
     </section>
   </Layout>
 )

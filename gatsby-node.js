@@ -9,7 +9,7 @@ const path = require(`path`)
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
 
-  const patternTemplate = path.resolve(`src/templates/pattern.js`)
+  const componentTemplate = path.resolve(`src/templates/component.js`)
 
   return graphql(`
     {
@@ -31,7 +31,7 @@ exports.createPages = ({ actions, graphql }) => {
     return result.data.allMdx.edges.forEach(({ node }) => {
       createPage({
         path: node.frontmatter.path,
-        component: patternTemplate,
+        component: componentTemplate,
         context: {}, // additional data can be passed via context
       })
     })

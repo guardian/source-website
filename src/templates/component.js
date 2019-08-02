@@ -25,7 +25,7 @@ export default function Template({
   const { name, purpose } = frontmatter // finally, the data from the markdown file
   return (
     <Layout>
-      <SEO title="Source: Pattern Library" />
+      <SEO title="The Guardian: Source" />
       <article>
         <h1 css={h1Styles}>{name}</h1>
         <p>{purpose}</p>

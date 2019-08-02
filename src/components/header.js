@@ -10,18 +10,6 @@ const headerStyle = css`
   background: ${palette.brand.main};
   margin-bottom: 1.45rem;
 `
-const navListStyle = css`
-  display: flex;
-  li {
-    flex: 1 1 auto;
-    list-style-type: none;
-  }
-`
-const navLinkStyle = css`
-  ${headline(3)};
-  color: white;
-  text-decoration: none;
-`
 const headerTextStyle = css`
   ${headline(9)};
   margin: 0;
@@ -40,30 +28,6 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </span>
-      <nav>
-        <ul css={navListStyle}>
-          <li>
-            <Link to="/" css={navLinkStyle}>
-              Pattern library
-            </Link>
-          </li>
-          <li>
-            <Link to="/principles/" css={navLinkStyle}>
-              Principles
-            </Link>
-          </li>
-          <li>
-            <Link to="/contributing/" css={navLinkStyle}>
-              Contributing
-            </Link>
-          </li>
-          <li>
-            <Link to="/glossary/" css={navLinkStyle}>
-              Glossary
-            </Link>
-          </li>
-        </ul>
-      </nav>
     </Container>
   </header>
 )

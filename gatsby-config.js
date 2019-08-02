@@ -23,8 +23,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `markdown-patterns`,
-        path: `${__dirname}/src/patterns`,
+        name: `markdown`,
+        path: `${__dirname}/src/content`,
       },
     },
     `gatsby-plugin-mdx`,
