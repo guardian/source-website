@@ -37,14 +37,14 @@ export default function Template({
 }
 
 export const pageQuery = graphql`
-  query($path: String!) {
-    mdx(frontmatter: { path: { eq: $path } }) {
-      frontmatter {
-        name
-        purpose
-        path
-      }
+  query ComponentQuery($id: String) {
+    mdx(id: { eq: $id }) {
+      id
       body
+      frontmatter {
+        purpose
+        name
+      }
     }
   }
 `
