@@ -20,9 +20,7 @@ const Sidenav = () => {
   `)
   return (
     <nav>
-      <h1>
-        <a href="/">The Guardian: Source</a>
-      </h1>
+      <a href="/">The Guardian: Source</a>
       <ul>
         <li>
           <button type="button">Getting started</button>

@@ -11,25 +11,18 @@ const h1Styles = css`
   margin-top: 8px;
   margin-bottom: 16px;
 `
-const h2Styles = css`
-  ${headline(3)};
-  margin-top: 8px;
-  margin-bottom: 16px;
-`
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
   const { mdx } = data // data.mdx holds our post data
   const { frontmatter, body } = mdx
-  const { name, purpose } = frontmatter // finally, the data from the markdown file
+  const { name } = frontmatter // finally, the data from the markdown file
   return (
     <Layout>
       <SEO title="The Guardian: Source" />
       <article>
         <h1 css={h1Styles}>{name}</h1>
-        <p>{purpose}</p>
-        <h2 css={h2Styles}>Example</h2>
         <MDXRenderer>{body}</MDXRenderer>
       </article>
     </Layout>
@@ -42,7 +35,6 @@ export const pageQuery = graphql`
       id
       body
       frontmatter {
-        purpose
         name
       }
     }
