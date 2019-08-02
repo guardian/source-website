@@ -6,10 +6,21 @@ import { headline } from "@guardian/pasteup/typography"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const h1Styles = css`
-  ${headline(5)};
-  margin-top: 8px;
-  margin-bottom: 16px;
+const styles = css`
+  h1,
+  h2,
+  h3 {
+    margin: 16px 0;
+  }
+  h1 {
+    ${headline(7)};
+  }
+  h2 {
+    ${headline(5)};
+  }
+  h3 {
+    ${headline(3)};
+  }
 `
 
 export default function Template({
@@ -21,8 +32,8 @@ export default function Template({
   return (
     <Layout>
       <SEO title="The Guardian: Source" />
-      <article>
-        <h1 css={h1Styles}>{name}</h1>
+      <article css={styles}>
+        <h1>{name}</h1>
         <MDXRenderer>{body}</MDXRenderer>
       </article>
     </Layout>
