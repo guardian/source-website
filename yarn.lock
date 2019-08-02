@@ -1085,6 +1085,13 @@
   resolved "https://registry.yarnpkg.com/@guardian/src-button/-/src-button-0.0.1.tgz#adfa5aff5d710fa21b648033f6d445d21a8a6fa3"
   integrity sha512-Vtk2XpRK0CgSLXWgnx0Gey2HOColBENbQmPnVHs1FccWMueMww6T80Ymef5kUrAwqnp9riXb8J42lWkFGXh9lQ==
 
+"@guardian/src-dropdown@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@guardian/src-dropdown/-/src-dropdown-0.0.4.tgz#de87abb6a506f7bd4397684e08c5d73f8ddcc8d6"
+  integrity sha512-i95mLO7BNlycpLpuyZ0U2ceblrota1NZHCJWDeIkFBgF16zzLm7zhfhKUi0v4/+jHEkTrTuk/GMfWUNKs4dPfA==
+  dependencies:
+    "@guardian/pasteup" "^2.0.0-alpha.2"
+
 "@hapi/address@2.x.x":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@hapi/address/-/address-2.0.0.tgz#9f05469c88cb2fd3dcd624776b54ee95c312126a"
