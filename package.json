@@ -9,6 +9,7 @@
     "@guardian/pasteup": "^2.0.0-alpha.2",
     "@guardian/src-button": "^0.0.5",
     "@guardian/src-dropdown": "^0.0.4",
+    "@guardian/src-radio": "^0.0.2",
     "@mdx-js/mdx": "^1.1.0",
     "@mdx-js/react": "^1.0.27",
     "gatsby": "^2.13.15",
