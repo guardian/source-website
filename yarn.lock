@@ -1080,10 +1080,13 @@
   resolved "https://registry.yarnpkg.com/@guardian/pasteup/-/pasteup-2.0.0-alpha.2.tgz#ee73012b19fdc260a4407dcbb7399b82307c3c5e"
   integrity sha512-V+PlyX9j6jSVs7jDD71wD/iIDC3K2yPletffFDcYHHmiIMuJaE3oqJC+tb8sWjZGtAkfXY8aYdC/GaYpCs6Xgg==
 
-"@guardian/src-button@^0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@guardian/src-button/-/src-button-0.0.1.tgz#adfa5aff5d710fa21b648033f6d445d21a8a6fa3"
-  integrity sha512-Vtk2XpRK0CgSLXWgnx0Gey2HOColBENbQmPnVHs1FccWMueMww6T80Ymef5kUrAwqnp9riXb8J42lWkFGXh9lQ==
+"@guardian/src-button@^0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@guardian/src-button/-/src-button-0.0.5.tgz#152563c6cf25d90051d5b22c7fc90a44ef99792d"
+  integrity sha512-q5X4nlXVaujeJRK7nsnge4lJ2hHbOQxCHH6BbgrKKa6910Wa3faU25PDM5wSZ8u5CFekXwK0v3xD3NurEcHHvg==
+  dependencies:
+    "@guardian/pasteup" "^2.0.0-alpha.2"
+    "@guardian/src-svgs" "^0.0.1"
 
 "@guardian/src-dropdown@^0.0.4":
   version "0.0.4"
@@ -1091,6 +1094,11 @@
   integrity sha512-i95mLO7BNlycpLpuyZ0U2ceblrota1NZHCJWDeIkFBgF16zzLm7zhfhKUi0v4/+jHEkTrTuk/GMfWUNKs4dPfA==
   dependencies:
     "@guardian/pasteup" "^2.0.0-alpha.2"
+
+"@guardian/src-svgs@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@guardian/src-svgs/-/src-svgs-0.0.1.tgz#e097fa28a54cb8901d601ad81a535f5106de72eb"
+  integrity sha512-BXbeuPlmkfFGpD0ZyPlR68ICbszQoo2Ej0hbQNKrpqYF1nwCDSgKyoJz7ODD6/o/oI5p6jI3fkq9RiW25ycjTw==
 
 "@hapi/address@2.x.x":
   version "2.0.0"
