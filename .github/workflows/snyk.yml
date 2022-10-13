@@ -1,0 +1,20 @@
+name: Snyk
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  security:
+    uses: guardian/.github/.github/workflows/sbt-node-snyk.yml@main
+    with:
+      DEBUG: true
+      ORG: guardian-csti
+      SKIP_NODE: false
+      NODE_VERSION_FILE: ./.nvmrc
+      
+      
+    secrets:
+       SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
